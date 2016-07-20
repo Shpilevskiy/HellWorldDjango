@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloWorldDjango</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap.min.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'HelloDjangoApp/index.css'%}"/>
+
+</head>
+<body>
+
+    <div class="container center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group ">
+                     <input type="text" class="form-control input-lg" id="action-input" placeholder="please, type smt">
+
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary input-lg" id="button-input" type="button">Go!</button>
+                     </span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="input-group ">
+                    <label for="response-area">Response:</label>
+                    <textarea disabled class="form-control" rows="5" id="response-area"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'jquery/dist/jquery.min.js' %}"> </script>
+    <script type="text/javascript" src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'HelloDjangoApp/index.js' %}"></script>
+</body>
+</html>
